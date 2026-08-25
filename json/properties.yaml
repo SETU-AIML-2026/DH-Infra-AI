@@ -1,0 +1,8 @@
+credits: SETU Computing and Mathematics
+icon:
+  type: material-symbols:cloud-sync
+  color: "2D7FF9"
+auth: 0
+labStepsAutoNumber: true
+lightboxpdf: true
+llm: 2
