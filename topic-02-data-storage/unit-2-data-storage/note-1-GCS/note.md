@@ -1,0 +1,71 @@
+---
+icon:
+  type: thesvg-color:google-cloud-storage
+  color: "#a65c23"
+---
+
+Google Cloud Storage tutorial
+
+# Getting Started with Google Cloud Storage (GCS)
+
+This guide explains how to access **Google Cloud Storage (GCS)**, create a new storage bucket, and upload data using the Google Cloud web console.
+
+## 1. Accessing And Setting Up Google Cloud
+
+1. Open the [Google Cloud Console](https://console.cloud.google.com/).
+2. Sign in using your Google account.
+3. Select the **Google Cloud project** you have been assigned.
+4. At the top of the Google Cloud Console, open the project selector.
+5. Select New Project if you need to create a project.
+6. Enter a suitable project name.
+7. Select the billing project/account.
+8. Confirm that the correct project and billing information have been selected, then click Create.
+9. In the navigation menu, select **Cloud Storage** → **Buckets**.
+
+## 2. Create a New Bucket
+
+A **bucket** is a container used to store files and data in Google Cloud.
+
+1. On the **Cloud Storage → Buckets** page, click **Create**.
+2. Enter a unique name for your bucket.
+
+   * Bucket names must be globally unique.
+   * Use a simple name such as `student-data-12345`.
+   * Avoid spaces and special characters.
+3. Choose the appropriate **location**. Use the location specified by your instructor if one has been provided.
+4. For the remaining options, keep the default settings unless your instructor tells you otherwise.
+5. Click **Create**.
+
+Your new bucket should now appear in the list of buckets.
+
+## 3. Upload Data to Your Bucket
+
+1. Click the name of the bucket you just created.
+2. Click **Upload files**.
+3. Select the file or files you want to upload from your computer. [Sample Data](https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)
+4. Wait for the upload to complete.
+5. Your uploaded files will appear in the bucket.
+
+You can also use **Upload folder** if you need to upload an entire folder of files.
+
+## 4. Check Your Uploaded Data
+
+After uploading:
+
+1. Open your bucket.
+2. Confirm that your file appears in the list.
+3. Click the file name if you want to view its details.
+
+## Important Notes
+
+* **Do not upload sensitive or personal information** unless your instructor has explicitly asked you to do so.
+* Keep your bucket and objects **private** unless you have been instructed to change their permissions.
+* Make sure you are working in the **correct Google Cloud project**.
+* Bucket names are globally unique, so you may need to add your student number or another unique identifier to the name.
+* Delete test files and buckets when they are no longer required, if your course instructions allow it.
+
+## Quick Summary
+
+**Google Cloud Console → Select Project → Cloud Storage → Buckets → Create → Open Bucket → Upload files**
+
+You have now created a GCS bucket and uploaded data to it using the Google Cloud web console.

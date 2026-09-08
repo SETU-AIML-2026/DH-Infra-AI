@@ -1,0 +1,712 @@
+<SYSTEM> This is the Tutors course  Data Handling and Infrastructure for AI by SETU Computing and Mathematics</SYSTEM>
+
+
+#  Data Handling and Infrastructure for AI
+
+# Data Handling and Infrastructure for AI
+
+data engineering · pipelines · storage · AI/ML Ops · cloud infrastructure
+
+Tutors site for the advanced module on building, operating, and scaling the data and infrastructure foundations behind modern AI systems.
+
+# Course :  Data Handling and Infrastructure for AI
+
+ 
+data engineering · pipelines · storage · AI/ML Ops · cloud infrastructure
+
+Tutors site for the advanced module on building, operating, and scaling the data and infrastructure foundations behind modern AI systems.
+
+## Topic :  00 Assignments and Introduction
+
+ 
+Introduction, assignment specifications, schedules and submission guidelines
+### Unit :  Module Introduction 
+
+ 
+#### Talk : Module Introduction
+
+ 
+#### Talk : 01 Assignments
+
+ 
+#### Note :  Setting Up a Basic Python Working Environment
+
+ 
+How to run python code?
+
+This guide walks you through the basic tools and workflows you need to start working with Python during this course. We will begin with the simplest options (Google Colab and Jupyter notebooks) and gradually introduce concepts such as packages, virtual environments, and reproducibility. More advanced options, such as running Jupyter inside Docker containers, are included at the end as a bonus.
+
+## 1. What is Python?
+
+Python is a general-purpose programming language designed to be readable, expressive, and relatively easy to learn. It is widely used for data analysis, scientific computing, automation, web development, artificial intelligence, and many other applications. One of Python's strengths is its large ecosystem of reusable packages, which means that you can build on tools created by other developers rather than implementing everything yourself.
+
+If you need to install Python on your own computer, follow the official Python installation and setup documentation:
+
+[Official Python documentation and installation guide](https://docs.python.org/3/?utm_source=chatgpt.com)
+
+For this course, use a recent **Python 3** release. After installation, you can check that Python is available from a terminal:
+
+```bash
+python --version
+```
+
+On some Linux and macOS systems, you may need to use:
+
+```bash
+python3 --version
+```
+
+If the command prints a Python 3 version number, Python is installed and available.
+
+---
+
+# 2. Google Colab and Jupyter Notebooks
+
+For the first part of the course, **Google Colab is the recommended way to get started**. It allows you to run Python code in your web browser without having to install Python or most of the required packages locally.
+
+A notebook consists of cells that can contain Python code, text, equations, visualisations, and other content. You can execute a code cell and immediately see its output.
+
+Google Colab is based on the Jupyter notebook ecosystem and provides a convenient hosted Python environment.
+
+## 2.1 Getting started with Google Colab
+
+1. Open [Google Colab](https://colab.research.google.com/) in your browser.
+2. Sign in with a Google account if required.
+3. Create a new notebook.
+4. Add a code cell.
+5. Enter:
+
+```python
+print("Hello, Python!")
+```
+
+6. Run the cell using the play button next to it.
+
+You can also install additional Python packages directly inside a Colab notebook using `pip`:
+
+```python
+!pip install pandas
+```
+
+The `!` tells the notebook to execute the command using the underlying system shell.
+
+> **Important:** Colab provides a temporary computing environment. Packages and files installed during a session may not necessarily remain available when the runtime is restarted. For serious projects, keep your code and dependency information in a repository or project directory.
+
+---
+
+# 3. What is `pip`?
+
+Python comes with a large **standard library**, but many useful tools are provided as separate packages. Examples include:
+
+* `numpy` for numerical computing
+* `pandas` for working with tabular data
+* `matplotlib` for visualisation
+* `scikit-learn` for machine learning
+* `requests` for working with web services
+
+`pip` is the standard Python tool for installing packages from the Python Package Index (PyPI) and other package sources.
+
+For example:
+
+```bash
+python -m pip install numpy
+```
+
+or, on systems where Python is invoked as `python3`:
+
+```bash
+python3 -m pip install numpy
+```
+
+You can install several packages at once:
+
+```bash
+python -m pip install numpy pandas matplotlib
+```
+
+Using `python -m pip` is often preferable to simply typing `pip`, because it makes it explicit which Python installation is being used.
+
+You can learn more about package installation in the official Python and pip documentation.
+
+---
+
+# 4. The `requirements.txt` file
+
+Installing packages one at a time is convenient when experimenting, but it becomes problematic when you start sharing code.
+
+Imagine that you write a project using:
+
+```text
+numpy
+pandas
+matplotlib
+scikit-learn
+```
+
+A colleague downloads your project, but their computer does not have these packages installed. They need to know exactly what your project requires.
+
+This is where **`requirements.txt`** becomes important.
+
+A simple `requirements.txt` might look like this:
+
+```text
+numpy==2.3.2
+pandas==2.3.1
+matplotlib==3.10.5
+scikit-learn==1.7.1
+```
+
+The file records the Python packages required by the project. In particular, specifying versions helps make the environment reproducible.
+
+Another person can then create the environment and install everything with:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### Why is this important?
+
+Without a requirements file, you might say:
+
+> "Install pandas and numpy."
+
+But which versions?
+
+A package can change over time. A newer version may introduce a new feature, remove an old feature, or behave differently from the version you originally used.
+
+A requirements file therefore acts as a **recipe for recreating the software environment** used by your project.
+
+This is vital for:
+
+* sharing coursework with instructors and classmates;
+* reproducing results;
+* collaborating on projects;
+* debugging problems;
+* running code on another computer or server;
+* deploying applications;
+* preserving old projects.
+
+A good rule is:
+
+> **If a project depends on external Python packages, keep its dependencies documented in a requirements file.**
+
+---
+
+# 5. Virtual environments with `venv`
+
+A second important concept is the **virtual environment**.
+
+Suppose you have two Python projects:
+
+* Project A requires version 1 of a package.
+* Project B requires version 2 of the same package.
+
+Installing both packages globally can create conflicts.
+
+A virtual environment gives each project its own isolated collection of Python packages.
+
+Python includes a built-in tool called `venv` for creating these environments.
+
+## 5.1 Create a virtual environment
+
+First, create a directory for your project:
+
+```bash
+mkdir my-python-project
+cd my-python-project
+```
+
+Then create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+The `.venv` directory contains the isolated environment.
+
+## 5.2 Activate the environment
+
+### macOS / Linux
+
+```bash
+source .venv/bin/activate
+```
+
+### Windows PowerShell
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+After activation, your terminal will usually show something like:
+
+```text
+(.venv)
+```
+
+This indicates that commands such as `python` and `pip` are now associated with the virtual environment.
+
+## 5.3 Install packages
+
+Once the environment is active:
+
+```bash
+python -m pip install numpy pandas matplotlib jupyterlab
+```
+
+You can then save the project's dependencies in `requirements.txt`.
+
+For example:
+
+```bash
+python -m pip freeze > requirements.txt
+```
+
+Another computer can recreate the environment with:
+
+```bash
+python -m venv .venv
+```
+
+followed by activation and:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+This combination is a very useful basic reproducibility workflow:
+
+```text
+Project
+├── .venv/
+├── requirements.txt
+├── notebooks/
+└── scripts/
+```
+
+The `.venv` directory itself should generally **not** be committed to Git or uploaded with your project. It can be recreated from `requirements.txt`.
+
+---
+
+# 6. Running Jupyter locally
+
+Google Colab is convenient because the computing environment is hosted for you. Another option is to install Jupyter on your own computer.
+
+Project Jupyter provides official installation instructions:
+
+[Installing Jupyter](https://jupyter.org/install?utm_source=chatgpt.com)
+
+With a virtual environment activated, install JupyterLab with:
+
+```bash
+python -m pip install jupyterlab
+```
+
+Then start it:
+
+```bash
+jupyter lab
+```
+
+Jupyter will start a local server and normally open a browser window automatically.
+
+You can then create notebooks and execute Python code using your own computer's Python environment.
+
+The classic Jupyter Notebook interface can alternatively be installed with:
+
+```bash
+python -m pip install notebook
+```
+
+and started with:
+
+```bash
+jupyter notebook
+```
+
+For new projects, **JupyterLab is generally the better default** because it provides a more complete development environment.
+
+---
+
+# 7. Run a Jupyter server yourself
+
+An alternative to Colab is to run a Jupyter server on a local computer or on a cloud server.
+
+This is useful when:
+
+* you want more control over the Python environment;
+* you have a powerful local machine;
+* you need access to specialised hardware;
+* you want to use a cloud virtual machine;
+* you need notebooks to run for longer periods;
+* you are working with datasets that are too large for a typical hosted environment.
+
+## 7.1 Local Jupyter server
+
+The basic process is:
+
+1. Install Python.
+2. Create a project directory.
+3. Create a virtual environment.
+4. Activate the virtual environment.
+5. Install JupyterLab.
+6. Install the packages required by your course or project.
+7. Start the Jupyter server.
+
+For example:
+
+```bash
+mkdir course-project
+cd course-project
+
+python -m venv .venv
+```
+
+Activate the environment and install Jupyter:
+
+```bash
+python -m pip install jupyterlab
+```
+
+Then start the server:
+
+```bash
+jupyter lab
+```
+
+The terminal will display a local URL, typically containing a security token. Open that URL in your browser.
+
+---
+
+# 8. Jupyter on a cloud server
+
+A cloud server follows essentially the same basic pattern, but there is an important security difference: **the server is potentially accessible from the internet**.
+
+A simplified workflow is:
+
+1. Create a cloud virtual machine.
+2. Connect to it using SSH.
+3. Install Python.
+4. Create a virtual environment.
+5. Install JupyterLab and your project dependencies.
+6. Start Jupyter.
+7. Set up port access.
+8. Access it securely from your own computer.
+
+For example:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install jupyterlab
+```
+
+You should **not simply expose an unauthenticated Jupyter server directly to the public internet**.
+
+For a basic setup, an SSH tunnel is often a safer approach. For example, if Jupyter is running on port `8888` on the remote server:
+
+```bash
+ssh -L 8888:localhost:8888 username@your-server
+```
+
+Then start Jupyter on the server:
+
+```bash
+jupyter lab --no-browser --port=8888
+```
+
+You can open the corresponding local address in your browser.
+
+> **Security note:** Cloud-hosted Jupyter servers require additional security considerations, including authentication, firewall rules, HTTPS, user permissions, and keeping the operating system and software updated. Treat public-facing Jupyter servers as a system-administration task rather than simply another way to run a notebook.
+
+---
+
+# 9. A recommended workflow for this course
+
+For the beginning of the course, keep things simple.
+
+### Recommended starting point
+
+**Use Google Colab** when:
+
+* you want to start coding immediately;
+* you do not want to install Python;
+* you are following provided notebooks;
+* you are experimenting with small examples.
+
+### Move to a local environment when:
+
+* you start developing the course project;
+* you want your own persistent environment;
+* you need packages or system tools that are inconvenient to configure in Colab;
+* you want to learn standard Python development practices.
+
+A good local project should eventually look something like:
+
+```text
+my-project/
+├── .venv/
+├── notebooks/
+│   └── analysis.ipynb
+├── src/
+│   └── my_code.py
+├── requirements.txt
+└── README.md
+```
+
+The most important concepts to remember are:
+
+1. **Python** is the programming language.
+2. **Jupyter/Colab** provides an interactive environment for running Python.
+3. **pip** installs additional Python packages.
+4. **requirements.txt** documents the packages and versions required by a project.
+5. **venv** creates an isolated environment for a project.
+6. Keeping these pieces organised makes your work much easier to reproduce.
+
+---
+
+# 10. Bonus: Running Jupyter with Docker
+
+> **Advanced topic — not required for this stage of the course**
+>
+> Docker is powerful, but you do **not** need to learn Docker to complete the basic course exercises. Treat this section as an introduction to a technique you may encounter later in professional software development and research computing.
+
+Docker allows you to package an application together with its software environment into a **container**. Instead of installing Python, Jupyter, and dozens of packages manually on every computer, you can describe the environment in configuration files and build a container containing everything you need.
+
+This can make environments much easier to reproduce.
+
+## 10.1 Why use Docker for Jupyter?
+
+A Docker-based Jupyter environment can provide:
+
+* a consistent Python version;
+* a fixed collection of packages;
+* an isolated environment;
+* an easy way to recreate the environment;
+* a convenient way to deploy Jupyter to a server;
+* less dependency on the host computer's configuration.
+
+The Jupyter project maintains **Jupyter Docker Stacks**, which provide ready-to-run Docker images containing Jupyter applications and related scientific computing tools.
+
+[Jupyter Docker Stacks documentation and repository](https://github.com/jupyter/docker-stacks?utm_source=chatgpt.com)
+
+## 10.2 The simplest approach
+
+After installing Docker, you can use an existing Jupyter Docker image rather than building everything yourself.
+
+For example:
+
+```bash
+docker run -p 8888:8888 \
+    quay.io/jupyter/base-notebook:latest
+```
+
+The container starts a Jupyter server and maps its port `8888` to port `8888` on your computer.
+
+The Jupyter Docker Stacks documentation provides more complete examples, including mounting a local directory into the container so that your notebooks remain available outside the container.
+
+## 10.3 Building your own image
+
+For a project that requires a specific environment, you can create a `Dockerfile`.
+
+A simplified example is:
+
+```dockerfile
+FROM quay.io/jupyter/base-notebook:latest
+
+COPY requirements.txt /tmp/requirements.txt
+
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+```
+
+Your `requirements.txt` might contain:
+
+```text
+numpy==2.3.2
+pandas==2.3.1
+matplotlib==3.10.5
+scikit-learn==1.7.1
+```
+
+You can then build the image:
+
+```bash
+docker build -t my-course-jupyter .
+```
+
+and run it:
+
+```bash
+docker run -p 8888:8888 my-course-jupyter
+```
+
+This illustrates an important idea: **`requirements.txt` and Docker complement each other**. The requirements file describes the Python packages, while the Dockerfile describes how the larger computing environment is constructed.
+
+Docker's official Python guide also demonstrates installing dependencies from a `requirements.txt` file during image construction.
+
+## 10.4 Why this is useful for reproducibility
+
+Without containers, a project might depend on:
+
+```text
+Operating system
+       ↓
+Python version
+       ↓
+Virtual environment
+       ↓
+Python packages
+       ↓
+Jupyter
+       ↓
+Your code
+```
+
+Docker allows you to package a much larger portion of this stack into a reproducible container image.
+
+This is particularly valuable for:
+
+* research projects that need to be reproduced years later;
+* teaching environments where every student should have the same setup;
+* automated testing;
+* cloud deployment;
+* production systems;
+* collaborative software projects.
+
+However, Docker introduces additional concepts such as images, containers, volumes, networking, port mappings, security, and image management.
+
+**For this course, you do not need Docker.** Start with Google Colab or a local Python + Jupyter + `venv` setup. Once those concepts are comfortable, Docker will be much easier to understand.
+
+---
+
+# 11. Final checklist
+
+Before starting the practical exercises, make sure you can do the following:
+
+* [ ] Open a Google Colab notebook.
+* [ ] Run a simple Python command.
+* [ ] Understand what a Python package is.
+* [ ] Understand what `pip` does.
+* [ ] Install a package with `pip`.
+* [ ] Explain the purpose of `requirements.txt`.
+* [ ] Create a Python virtual environment with `venv`.
+* [ ] Activate and deactivate a virtual environment.
+* [ ] Install JupyterLab locally.
+* [ ] Start a local Jupyter server.
+* [ ] Understand why cloud-hosted Jupyter servers need additional security.
+* [ ] Understand, at a high level, what Docker containers are and why they can improve reproducibility.
+
+## Further reading
+
+* [Python documentation](https://docs.python.org/3/?utm_source=chatgpt.com)
+* [Project Jupyter installation guide](https://jupyter.org/install?utm_source=chatgpt.com)
+* [Jupyter Docker Stacks](https://github.com/jupyter/docker-stacks?utm_source=chatgpt.com)
+* [Docker's Python guide](https://docs.docker.com/guides/python/?utm_source=chatgpt.com)
+
+## Topic :  01-03 Data Storage
+
+ 
+Solutions to store data efficiently
+### Unit :  01 Data Types 
+
+ 
+#### Talk : Data Types
+
+ 
+#### Panelvideo : Data Types
+
+ 
+#### Notebook : Python Intro
+
+ 
+#### Notebook : Numpy tutorial
+
+ 
+### Unit :  02 Databases and data storage
+
+ 
+#### Talk : Data storage basics
+
+ 
+#### Note : Google Cloud Storage tutorial
+
+ 
+# Getting Started with Google Cloud Storage (GCS)
+
+This guide explains how to access **Google Cloud Storage (GCS)**, create a new storage bucket, and upload data using the Google Cloud web console.
+
+## 1. Accessing And Setting Up Google Cloud
+
+1. Open the [Google Cloud Console](https://console.cloud.google.com/).
+2. Sign in using your Google account.
+3. Select the **Google Cloud project** you have been assigned.
+4. At the top of the Google Cloud Console, open the project selector.
+5. Select New Project if you need to create a project.
+6. Enter a suitable project name.
+7. Select the billing project/account.
+8. Confirm that the correct project and billing information have been selected, then click Create.
+9. In the navigation menu, select **Cloud Storage** → **Buckets**.
+
+## 2. Create a New Bucket
+
+A **bucket** is a container used to store files and data in Google Cloud.
+
+1. On the **Cloud Storage → Buckets** page, click **Create**.
+2. Enter a unique name for your bucket.
+
+   * Bucket names must be globally unique.
+   * Use a simple name such as `student-data-12345`.
+   * Avoid spaces and special characters.
+3. Choose the appropriate **location**. Use the location specified by your instructor if one has been provided.
+4. For the remaining options, keep the default settings unless your instructor tells you otherwise.
+5. Click **Create**.
+
+Your new bucket should now appear in the list of buckets.
+
+## 3. Upload Data to Your Bucket
+
+1. Click the name of the bucket you just created.
+2. Click **Upload files**.
+3. Select the file or files you want to upload from your computer. [Sample Data](https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)
+4. Wait for the upload to complete.
+5. Your uploaded files will appear in the bucket.
+
+You can also use **Upload folder** if you need to upload an entire folder of files.
+
+## 4. Check Your Uploaded Data
+
+After uploading:
+
+1. Open your bucket.
+2. Confirm that your file appears in the list.
+3. Click the file name if you want to view its details.
+
+## Important Notes
+
+* **Do not upload sensitive or personal information** unless your instructor has explicitly asked you to do so.
+* Keep your bucket and objects **private** unless you have been instructed to change their permissions.
+* Make sure you are working in the **correct Google Cloud project**.
+* Bucket names are globally unique, so you may need to add your student number or another unique identifier to the name.
+* Delete test files and buckets when they are no longer required, if your course instructions allow it.
+
+## Quick Summary
+
+**Google Cloud Console → Select Project → Cloud Storage → Buckets → Create → Open Bucket → Upload files**
+
+You have now created a GCS bucket and uploaded data to it using the Google Cloud web console.
+
+#### Notebook : Pandas basics
+
+ 
+#### Notebook : Data shards
+
+ 
+### Unit :  03 Distributed Databases and Data Storage
+
+ 
+#### Talk : Distributed Databases and Data Storage Lecture
+
+ 
+#### Notebook : GCS Tutorial
+
+ 
