@@ -613,6 +613,9 @@ Solutions to store data efficiently
 #### Talk : Data Types
 
  
+#### Panelvideo : Data Types
+
+ 
 #### Notebook : Python Intro
 
  
