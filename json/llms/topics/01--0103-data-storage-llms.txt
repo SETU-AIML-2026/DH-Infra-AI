@@ -11,7 +11,10 @@ Solutions to store data efficiently
 ### Talk : Data Types
 
  
-### Panelvideo : Data Types
+### Panelvideo : Lecture 01 Data Types
+
+ 
+### Panelvideo : Lab session 01 Data Types
 
  
 ### Notebook : Python Intro
