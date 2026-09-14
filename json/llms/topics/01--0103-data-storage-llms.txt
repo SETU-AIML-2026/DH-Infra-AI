@@ -96,6 +96,12 @@ After uploading:
 
 You have now created a GCS bucket and uploaded data to it using the Google Cloud web console.
 
+### Panelvideo : 
+
+ 
+### Panelvideo : Lab session 02 Data Storage
+
+ 
 ### Notebook : Pandas basics
 
  
