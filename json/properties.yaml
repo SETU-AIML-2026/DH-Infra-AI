@@ -2,7 +2,10 @@ credits: SETU Computing and Mathematics
 icon:
   type: material-symbols:cloud-sync
   color: "2D7FF9"
-auth: 0
+auth: 1
+slack: https://setu-aiml-sw-eng.slack.com/archives/C0BUUUJ25JR
+moodle: https://moodle.setu.ie/course/view.php?id=228583
+youtube: https://www.youtube.com/watch?v=_y4LhOSwRR8&list=PLeJJFemRxGJk&pp=sAgC
 labStepsAutoNumber: true
 lightboxpdf: true
 llm: 2
