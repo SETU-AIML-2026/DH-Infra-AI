@@ -1,0 +1,188 @@
+<SYSTEM> This is the Tutors course  Data Handling and Infrastructure for AI topic  01-04 Data Storage by SETU Computing and Mathematics</SYSTEM>
+
+
+# Topic :  01-04 Data Storage
+
+ 
+Solutions to store data efficiently
+## Unit :  01 Data Types 
+
+ 
+### Talk : Data Types
+
+ 
+### Panelvideo : Lecture 01 Data Types
+
+ 
+### Panelvideo : Lab session 01 Data Types
+
+ 
+### Notebook : Python Intro
+
+ 
+### Notebook : Numpy tutorial
+
+ 
+## Unit :  02 Databases and data storage
+
+ 
+### Talk : Data storage basics
+
+ 
+### Note : Google Cloud Storage tutorial
+
+ 
+# Getting Started with Google Cloud Storage (GCS)
+
+This guide explains how to access **Google Cloud Storage (GCS)**, create a new storage bucket, and upload data using the Google Cloud web console.
+
+## 1. Accessing And Setting Up Google Cloud
+
+1. Open the [Google Cloud Console](https://console.cloud.google.com/).
+2. Sign in using your Google account.
+3. Select the **Google Cloud project** you have been assigned.
+4. At the top of the Google Cloud Console, open the project selector.
+5. Select New Project if you need to create a project.
+6. Enter a suitable project name.
+7. Select the billing project/account.
+8. Confirm that the correct project and billing information have been selected, then click Create.
+9. In the navigation menu, select **Cloud Storage** → **Buckets**.
+
+## 2. Create a New Bucket
+
+A **bucket** is a container used to store files and data in Google Cloud.
+
+1. On the **Cloud Storage → Buckets** page, click **Create**.
+2. Enter a unique name for your bucket.
+
+   * Bucket names must be globally unique.
+   * Use a simple name such as `student-data-12345`.
+   * Avoid spaces and special characters.
+3. Choose the appropriate **location**. Use the location specified by your instructor if one has been provided.
+4. For the remaining options, keep the default settings unless your instructor tells you otherwise.
+5. Click **Create**.
+
+Your new bucket should now appear in the list of buckets.
+
+## 3. Upload Data to Your Bucket
+
+1. Click the name of the bucket you just created.
+2. Click **Upload files**.
+3. Select the file or files you want to upload from your computer. [Sample Data](https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)
+4. Wait for the upload to complete.
+5. Your uploaded files will appear in the bucket.
+
+You can also use **Upload folder** if you need to upload an entire folder of files.
+
+## 4. Check Your Uploaded Data
+
+After uploading:
+
+1. Open your bucket.
+2. Confirm that your file appears in the list.
+3. Click the file name if you want to view its details.
+
+## Important Notes
+
+* **Do not upload sensitive or personal information** unless your instructor has explicitly asked you to do so.
+* Keep your bucket and objects **private** unless you have been instructed to change their permissions.
+* Make sure you are working in the **correct Google Cloud project**.
+* Bucket names are globally unique, so you may need to add your student number or another unique identifier to the name.
+* Delete test files and buckets when they are no longer required, if your course instructions allow it.
+
+## Quick Summary
+
+**Google Cloud Console → Select Project → Cloud Storage → Buckets → Create → Open Bucket → Upload files**
+
+You have now created a GCS bucket and uploaded data to it using the Google Cloud web console.
+
+### Panelvideo : Lecture 02 Data Storage
+
+ 
+### Panelvideo : Lab session 02 Data Storage
+
+ 
+### Notebook : Pandas basics
+
+ 
+### Notebook : Data shards
+
+ 
+## Unit :  03 Distributed Databases and Data Storage
+
+ 
+### Talk : Distributed Databases and Data Storage Lecture
+
+ 
+### Panelvideo : Lecture 03 Data Lakes and Cloud Storage
+
+ 
+### Panelvideo : 
+
+ 
+### Notebook : GCS Tutorial
+
+ 
+## Unit :  04 Project work M1
+
+ 
+### Note :  Grading Rubrics
+
+ 
+### Peer-grading instructions
+
+Peer grading is not only about assigning a score. Please **provide constructive feedback explaining your assessment**.
+
+In particular, highlight any **potential problems, ambiguities, or overlooked issues** that you identified in the project. Think about what could cause difficulties later in the project, for example, problems with data leakage, unclear data versions, insufficient reproducibility, inappropriate storage choices, or an underspecified preprocessing or data-splitting strategy.
+
+Your feedback should help to **improve their project**, rather than simply justify the grade. Be specific and, where possible, suggest what they could clarify or change.
+
+
+## Milestone 1 Peer-Grading Rubric
+
+**Maximum: 10 points**
+
+Assess each criterion based on the quality and completeness of the team's description. Give **partial credit** when a criterion is addressed but lacks important detail.
+
+| Criterion                                    |   Points | Full-credit expectations                                                                                                                                                                                                                   |
+| -------------------------------------------- | -------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1. Raw data storage**                      |  **1.0** | Clearly states **where the raw data will live**, including the storage system/location and why it is appropriate.                                                                                                                          |
+| **2. Processed data storage & file formats** |  **1.0** | Clearly describes **where processed data will be stored** and specifies appropriate **file formats** for raw and/or processed data, with enough detail to understand the intended representation.                                          |
+| **3. Database / object storage decision**    | **0.5** | Explicitly considers whether a **database, object storage, file system, or other solution** is needed. The choice is justified in relation to the project's data and access requirements.                                                  |
+| **4. Data versioning**                       | **0.5** | Explains **how different versions of the data will be identified and tracked**, including changes to datasets where relevant.                                                                                                              |
+| **5. Data access**                           | **1.0** | Clearly explains **how the system/code will access the data**, including relevant paths, APIs, credentials/access mechanisms, or other interfaces as appropriate.                                                                          |
+| **6. Data split / validation strategy**      |  **2.0** | Provides a **clear and appropriate data-splitting strategy**: either cross-validation or a train/dev/test split. The description specifies how the split/validation will be performed and avoids inappropriate data leakage.               |
+| **7. Feature description**                   |  **1.0** | Features used by the AI system are **clearly identified and described**. It is possible to understand what each feature represents and how it is obtained or constructed.                                                                  |
+| **8. Data types and formats**                | **0.5** | Specifies relevant **data types and formats** (e.g., numerical, categorical, text, image; integer, float, string; CSV, JSON, Parquet, etc.) sufficiently to understand how the data will be handled.                                       |
+| **9. Reproducibility of data collection**    |  **1.0** | Describes how the **data collection process can be reproduced**, including data sources, collection procedures, relevant parameters/settings, and/or code where appropriate.                                                               |
+| **10. Reproducibility of preprocessing**     |  **1.5** | Describes preprocessing steps clearly enough that another person could **reproduce the processed dataset from the raw data**. Important transformations, filtering, cleaning, feature construction, and relevant parameters are specified. |
+
+**Total: 10 points**
+
+## Peer-grading guidance
+
+When assigning points, consider the following:
+
+* **Full points:** The criterion is clearly addressed, sufficiently detailed, and appropriate for the project.
+* **Partial points:** The criterion is addressed but is vague, incomplete, insufficiently justified, or missing important implementation details.
+* **0 points:** The criterion is not addressed, or the proposed approach is fundamentally inappropriate.
+
+### Important distinction
+
+**Mentioning something is not the same as specifying it.**
+
+For example:
+
+* *Weak:* “We will store the data in the cloud.”
+* *Stronger:* “Raw data will be stored in a GCS bucckets as JSON files. Processed feature tables will be stored as Parquet files. Each dataset release will have a version identifier and timestamp.”
+
+Similarly:
+
+* *Weak:* “We will split the data into training and testing data.”
+* *Stronger:* “We will use a 70/15/15 train/dev/test split, stratified by the target class. The test set will be held out until final evaluation, and preprocessing parameters will be fitted using only the training data.”
+
+### Overall peer-grading question
+
+**Could another student, using this milestone description, understand how the project's data will be stored, accessed, transformed, split, and reproduced?**
+
+If not, deduct points from the relevant criteria for missing specificity.
