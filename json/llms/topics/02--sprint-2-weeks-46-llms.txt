@@ -181,6 +181,9 @@ Colab storage is temporary. Select **File → Download → Download .ipynb** and
 - [ ] The completed notebook can be downloaded.
 
 
+### Panelvideo : Week 4 Lecture Recording: Statistical Foundations and Exploratory Data Analysis
+
+ 
 ### Notebook : Week 4 Practical Notebook: Statistical Foundations and Exploratory Data Analysis
 
  
