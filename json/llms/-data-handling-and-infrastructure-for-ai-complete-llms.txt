@@ -603,7 +603,7 @@ Before starting the practical exercises, make sure you can do the following:
 * [Jupyter Docker Stacks](https://github.com/jupyter/docker-stacks?utm_source=chatgpt.com)
 * [Docker's Python guide](https://docs.docker.com/guides/python/?utm_source=chatgpt.com)
 
-## Topic :  01-04 Data Storage
+## Topic :  Sprint 1: 01-04 Data Storage
 
  
 Solutions to store data efficiently
@@ -794,10 +794,16 @@ If not, deduct points from the relevant criteria for missing specificity.
  
 Exploratory data analysis, data preparation and reproducible data pipelines.
 
-### Unit :  Week 4: Statistical Foundations and Exploratory Data Analysis
+### Unit :  Lecture (2 hrs): Statistical Foundations and Exploratory Data Analysis
 
  
 #### Talk : Week 4 Lecture: Statistical Foundations for EDA
+
+ 
+#### Panelvideo : Week 4 Lecture Recording: Statistical Foundations and Exploratory Data Analysis
+
+ 
+### Unit :  Lab (2 hrs): Statistical Foundations and Exploratory Data Analysis
 
  
 #### Note :  Lab 1: Getting Started
@@ -969,9 +975,6 @@ Colab storage is temporary. Select **File → Download → Download .ipynb** and
 - [ ] The completed notebook can be downloaded.
 
 
-#### Panelvideo : Week 4 Lecture Recording: Statistical Foundations and Exploratory Data Analysis
-
- 
 #### Notebook : Week 4 Practical Notebook: Statistical Foundations and Exploratory Data Analysis
 
  

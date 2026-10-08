@@ -4,4 +4,4 @@ icon:
   color: "#2D7FF9"
 ---
 
-# Week 4: Statistical Foundations and Exploratory Data Analysis
+# Lecture (2 hrs): Statistical Foundations and Exploratory Data Analysis

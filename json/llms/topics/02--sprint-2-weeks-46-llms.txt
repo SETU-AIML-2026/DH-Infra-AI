@@ -6,10 +6,16 @@
  
 Exploratory data analysis, data preparation and reproducible data pipelines.
 
-## Unit :  Week 4: Statistical Foundations and Exploratory Data Analysis
+## Unit :  Lecture (2 hrs): Statistical Foundations and Exploratory Data Analysis
 
  
 ### Talk : Week 4 Lecture: Statistical Foundations for EDA
+
+ 
+### Panelvideo : Week 4 Lecture Recording: Statistical Foundations and Exploratory Data Analysis
+
+ 
+## Unit :  Lab (2 hrs): Statistical Foundations and Exploratory Data Analysis
 
  
 ### Note :  Lab 1: Getting Started
@@ -181,9 +187,6 @@ Colab storage is temporary. Select **File → Download → Download .ipynb** and
 - [ ] The completed notebook can be downloaded.
 
 
-### Panelvideo : Week 4 Lecture Recording: Statistical Foundations and Exploratory Data Analysis
-
- 
 ### Notebook : Week 4 Practical Notebook: Statistical Foundations and Exploratory Data Analysis
 
  
