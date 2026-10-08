@@ -4,20 +4,12 @@ icon:
   color: "#15866C"
 ---
 
-# Lab 1: Getting Started
+# Lab 1:
 
 ## Statistical Foundations and pandas for EDA
 
-This guide prepares the environment for `Lecture_4_Colab_Lab_Student.ipynb`.
 
 ## Recommended environment: Google Colab
-
-1. Open <https://colab.research.google.com/>.
-2. Sign in with a Google account.
-3. Select **File → Upload notebook**.
-4. Upload `Lecture_4_Colab_Lab_Student.ipynb`.
-5. Select **Runtime → Change runtime type → Python 3 → CPU**.
-6. Run the notebook cells in order.
 
 A GPU is not required.
 
@@ -153,21 +145,3 @@ Rerun the plotting imports. In local Jupyter, add:
 ```python
 %matplotlib inline
 ```
-
-### Cells were executed out of order
-
-Restart the runtime or kernel, then run the notebook from the first cell.
-
-## Before leaving Colab
-
-Colab storage is temporary. Select **File → Download → Download .ipynb** and save any required figures or output files.
-
-## Pre-lab checklist
-
-- [ ] The Lab 1 notebook opens successfully.
-- [ ] Python 3 and CPU are selected.
-- [ ] All required libraries import successfully.
-- [ ] The Titanic dataset downloads correctly.
-- [ ] The dataset contains 891 rows and 12 columns.
-- [ ] The completed notebook can be downloaded.
-
