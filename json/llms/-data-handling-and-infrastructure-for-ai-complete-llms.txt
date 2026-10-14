@@ -952,3 +952,9 @@ Rerun the plotting imports. In local Jupyter, add:
 #### Notebook : Week 4 Practical Notebook: Statistical Foundations and Exploratory Data Analysis
 
  
+### Unit :  Lecture (2 hrs): Exploratory Data Analysis with pandas, NumPy and scikit-learn
+
+ 
+#### Talk : Week 5 Lecture: Exploratory Data Analysis with pandas, NumPy and scikit-learn
+
+ 
