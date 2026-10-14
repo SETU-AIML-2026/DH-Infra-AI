@@ -1,10 +1,4 @@
 
----
-icon:
-  type: material-symbols:rocket-launch
-  color: "#15866C"
----
-
 
 # Lab 5: Getting started
 
@@ -12,9 +6,9 @@ icon:
 Data Handling and Infrastructure for AI | MSc | 2-hour lab
 
 > [!NOTE]
-> **Read this first (two minutes).** The lab is ten short tasks and it is finished in class. **There is no homework.** Most of the code is already written: you fill in a few blanks, and a check cell tells you whether your number is right.
+> **Read this first.** The lab is ten short tasks. Most of the code is already written: you fill in a few blanks, and a check cell tells you whether your number is right.
 >
-> If something goes wrong, do not worry: almost every problem has a simple fix, and they are all in [section 5](#5-what-to-do-when-something-goes-wrong) and [section 6](#6-quick-tips-for-each-task). If you are stuck for more than two minutes, put your hand up.
+> If something goes wrong, do not worry: almost every problem has a simple fix, and they are all in [section 5](#5-what-to-do-when-something-goes-wrong) and [section 6](#6-quick-tips-for-each-task).
 
 ## Contents
 
@@ -33,8 +27,7 @@ Data Handling and Infrastructure for AI | MSc | 2-hour lab
 ## 1. What you need
 
 - A web browser (Chrome, Edge, Firefox or Safari) and a Google account. You do not need to install anything.
-- The notebook file `Lab5_EDA.ipynb` (in this repository, or from your lecturer).
-- If the data download is blocked on the day, your lecturer will give you `titanic.csv`. Keep it ready.
+- The notebook file `Lab5_EDA.ipynb` 
 
 ---
 
@@ -43,7 +36,7 @@ Data Handling and Infrastructure for AI | MSc | 2-hour lab
 **Quickest way (from GitHub):** click the button below.
 
 [Open Lab 5 in Google Colab](https://colab.research.google.com/github/SETU-AIML-2026/DH-Infra-AI/blob/main/topic-03-sprint-2-weeks-4-6/unit-4-week-5-lab/notebook-1-week-5-eda/Lab5_EDA.ipynb)
-> **Lecturer:** replace `YOUR-GITHUB-USERNAME`, `YOUR-REPO` and (if different) the branch and file path in the link above, then delete this line. The repository must be public for the button to work without sign-in.
+
 
 **Other ways to open it:**
 
