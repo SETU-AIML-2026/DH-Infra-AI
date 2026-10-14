@@ -20,7 +20,7 @@ Data Handling and Infrastructure for AI | MSc | 2-hour lab
 6. [Quick tips for each task](#6-quick-tips-for-each-task)
 7. [How to ask for help](#7-how-to-ask-for-help)
 8. [Before you leave](#8-before-you-leave)
-9. [Plan for the lab](#9-plan-for-the-lab)
+
 
 ---
 
