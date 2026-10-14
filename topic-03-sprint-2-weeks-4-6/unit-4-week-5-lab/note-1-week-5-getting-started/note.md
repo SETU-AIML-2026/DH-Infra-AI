@@ -157,10 +157,9 @@ NameError: name '___' is not defined          <-- read this line first
 
 ## 7. How to ask for help
 
-1. Read the last line of the error and try the table above (one minute).
-2. Look at the slide number given in the task, and open the hint (one minute).
-3. Ask a neighbour. Explaining where you are stuck often finds the problem.
-4. Put your hand up. Tell us which task you are on and show the last two or three lines of the error.
+1. Read the last line of the error and try the table above.
+2. Ask your fellow students/colleagues. Explaining where you are stuck often finds the problem.
+3. Drop a text in Slack. Tell us which task you are on and show the last two or three lines of the error.
 
 It is fine to ask. Nobody is expected to finish with every blank perfect: the goal is to understand each step.
 
@@ -181,20 +180,3 @@ pip install pandas numpy matplotlib seaborn scipy scikit-learn statsmodels jupyt
 then start Jupyter (`jupyter notebook`) and open the same file. Ask your lecturer if you need help.
 
 ---
-
-## 9. Plan for the lab
-
-| Time | What | Lecture slides |
-|---|---|---|
-| **Setup** | Open the notebook, run two cells | |
-| **Task 1** | Write a data contract | 11 to 12 |
-| **Task 2** | Measure missing data, by class | 15 to 17 |
-| **Task 3** | Check validity and extreme values | 20 to 22 |
-| **Task 4** | The ECDF and the majority baseline | 26 to 27 |
-| **Task 5** | Compare groups: effect size and uncertainty | 30 to 32 |
-| **Break** | 5 minutes after Task 5 | |
-| **Task 6** | Condition on a second variable; Simpson's paradox | 33, 35, 45 |
-| **Task 7** | Split the data; leak-free scaling with NumPy | 38 to 39, 42, 44 |
-| **Task 8** | How big can a leak be? | 40 to 41 |
-| **Task 9** | ColumnTransformer and Pipeline | 46 to 47 |
-| **Task 10** | Cross-validation; write one finding | 48, 50 |
