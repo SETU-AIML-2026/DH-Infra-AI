@@ -958,27 +958,24 @@ Rerun the plotting imports. In local Jupyter, add:
 #### Talk : Week 5 Lecture: Exploratory Data Analysis with pandas, NumPy and scikit-learn
 
  
+#### Panelvideo : Lecture 05: Exploratory Data Analysis Recording
+
+ 
 ### Unit :  Lab (2 hrs): Exploratory Data Analysis with pandas, NumPy and scikit-learn
 
  
 #### Note : 
 
- ---
-icon:
-  type: material-symbols:rocket-launch
-  color: "#15866C"
----
-
-
+ 
 # Lab 5: Getting started
 
 **Exploratory Data Analysis with pandas, NumPy and scikit-learn**
 Data Handling and Infrastructure for AI | MSc | 2-hour lab
 
 > [!NOTE]
-> **Read this first (two minutes).** The lab is ten short tasks and it is finished in class. **There is no homework.** Most of the code is already written: you fill in a few blanks, and a check cell tells you whether your number is right.
+> **Read this first.** The lab is ten short tasks. Most of the code is already written: you fill in a few blanks, and a check cell tells you whether your number is right.
 >
-> If something goes wrong, do not worry: almost every problem has a simple fix, and they are all in [section 5](#5-what-to-do-when-something-goes-wrong) and [section 6](#6-quick-tips-for-each-task). If you are stuck for more than two minutes, put your hand up.
+> If something goes wrong, do not worry: almost every problem has a simple fix, and they are all in [section 5](#5-what-to-do-when-something-goes-wrong) and [section 6](#6-quick-tips-for-each-task).
 
 ## Contents
 
@@ -990,15 +987,14 @@ Data Handling and Infrastructure for AI | MSc | 2-hour lab
 6. [Quick tips for each task](#6-quick-tips-for-each-task)
 7. [How to ask for help](#7-how-to-ask-for-help)
 8. [Before you leave](#8-before-you-leave)
-9. [Plan for the lab](#9-plan-for-the-lab)
+
 
 ---
 
 ## 1. What you need
 
 - A web browser (Chrome, Edge, Firefox or Safari) and a Google account. You do not need to install anything.
-- The notebook file `Lab5_EDA.ipynb` (in this repository, or from your lecturer).
-- If the data download is blocked on the day, your lecturer will give you `titanic.csv`. Keep it ready.
+- The notebook file `Lab5_EDA.ipynb` 
 
 ---
 
@@ -1007,7 +1003,7 @@ Data Handling and Infrastructure for AI | MSc | 2-hour lab
 **Quickest way (from GitHub):** click the button below.
 
 [Open Lab 5 in Google Colab](https://colab.research.google.com/github/SETU-AIML-2026/DH-Infra-AI/blob/main/topic-03-sprint-2-weeks-4-6/unit-4-week-5-lab/notebook-1-week-5-eda/Lab5_EDA.ipynb)
-> **Lecturer:** replace `YOUR-GITHUB-USERNAME`, `YOUR-REPO` and (if different) the branch and file path in the link above, then delete this line. The repository must be public for the button to work without sign-in.
+
 
 **Other ways to open it:**
 
@@ -1128,10 +1124,9 @@ NameError: name '___' is not defined          <-- read this line first
 
 ## 7. How to ask for help
 
-1. Read the last line of the error and try the table above (one minute).
-2. Look at the slide number given in the task, and open the hint (one minute).
-3. Ask a neighbour. Explaining where you are stuck often finds the problem.
-4. Put your hand up. Tell us which task you are on and show the last two or three lines of the error.
+1. Read the last line of the error and try the table above.
+2. Ask your fellow students/colleagues. Explaining where you are stuck often finds the problem.
+3. Drop a text in Slack. Tell us which task you are on and show the last two or three lines of the error.
 
 It is fine to ask. Nobody is expected to finish with every blank perfect: the goal is to understand each step.
 
@@ -1152,23 +1147,6 @@ pip install pandas numpy matplotlib seaborn scipy scikit-learn statsmodels jupyt
 then start Jupyter (`jupyter notebook`) and open the same file. Ask your lecturer if you need help.
 
 ---
-
-## 9. Plan for the lab
-
-| Time | What | Lecture slides |
-|---|---|---|
-| **Setup** | Open the notebook, run two cells | |
-| **Task 1** | Write a data contract | 11 to 12 |
-| **Task 2** | Measure missing data, by class | 15 to 17 |
-| **Task 3** | Check validity and extreme values | 20 to 22 |
-| **Task 4** | The ECDF and the majority baseline | 26 to 27 |
-| **Task 5** | Compare groups: effect size and uncertainty | 30 to 32 |
-| **Break** | 5 minutes after Task 5 | |
-| **Task 6** | Condition on a second variable; Simpson's paradox | 33, 35, 45 |
-| **Task 7** | Split the data; leak-free scaling with NumPy | 38 to 39, 42, 44 |
-| **Task 8** | How big can a leak be? | 40 to 41 |
-| **Task 9** | ColumnTransformer and Pipeline | 46 to 47 |
-| **Task 10** | Cross-validation; write one finding | 48, 50 |
 
 #### Notebook : Week 5 Practical Notebook: Exploratory Data Analysis with pandas, NumPy and scikit-learn
 
