@@ -363,3 +363,9 @@ then start Jupyter (`jupyter notebook`) and open the same file. Ask your lecture
 ### Notebook : Week 5 Practical Notebook: Exploratory Data Analysis with pandas, NumPy and scikit-learn
 
  
+## Unit :  Lecture (2 hrs): Data Pipelines
+
+ 
+### Talk : Week 6 Lecture: Data Pipelines
+
+ 
