@@ -1157,3 +1157,6 @@ then start Jupyter (`jupyter notebook`) and open the same file. Ask your lecture
 #### Talk : Week 6 Lecture: Data Pipelines
 
  
+#### Panelvideo : Lecture 06: Data Pipelines Recording
+
+ 
