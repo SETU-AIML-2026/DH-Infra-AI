@@ -1233,6 +1233,9 @@ The full instructions (including running it on your own computer) are in the REA
 
 *The data is published by Dublin City Council under the licence CC BY 4.0 (<https://data.smartdublin.ie/dataset/dublinbikes-api>).*
 
+#### Panelvideo : Lab 06: Data Pipelines Recording
+
+ 
 #### Notebook :  Lecture 6 notebook: run the data pipeline demo (in Google Colab or on your own computer)
 
  
