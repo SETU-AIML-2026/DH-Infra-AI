@@ -1470,3 +1470,15 @@ The notebook was run from start to end by its authors for Parts 0 to 5 (the samp
 ## 10. After this notebook
 
 Next comes **Lab 6**, in the `lab6_student` folder of the repository: you will extend this pipeline, prove your changes with tests, and run it on **Google Cloud Dataflow**.
+
+## Topic : Assessment milestone guides and grading rubrics.
+
+ 
+### Unit :  Milestone 2
+
+ 
+Guide and grading rubric
+
+#### Talk :  Milestone 2 Guide and Grading Rubric
+
+ 
