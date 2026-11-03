@@ -1,3 +1,3 @@
-# Sprint 1: 01-04 Data Storage
+# Sprint 3: 07-09 Data Storage
 
-Solutions to store data efficiently
+AI training pipeline

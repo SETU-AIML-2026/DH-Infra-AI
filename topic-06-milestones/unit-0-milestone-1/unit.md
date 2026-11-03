@@ -1,7 +1,9 @@
 ---
 icon:
-  type: hugeicons:milestone
+  type: material-symbols:assignment
   color: "#ee9417"
 ---
 
-# 04 Project work M1
+# Milestone 1
+
+Guide and grading rubric

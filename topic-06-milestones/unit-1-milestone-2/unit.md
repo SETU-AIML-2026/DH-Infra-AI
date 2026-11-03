@@ -5,6 +5,6 @@ icon:
   color: "#B45309"
 ---
 
-## Milestone 2
+# Milestone 2
 
 Guide and grading rubric
