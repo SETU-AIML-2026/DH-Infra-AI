@@ -1,10 +1,9 @@
 ---
-title: Milestone 2
 icon:
   type: material-symbols:assignment
-  color: "#B45309"
+  color: "#ee9417"
 ---
 
-## Milestone 2
+# Milestone 1
 
 Guide and grading rubric
