@@ -16,7 +16,7 @@ Highlight potential problems, ambiguities, or overlooked issues, such as insuffi
 
 Your feedback should help to improve the project, rather than simply justify the grade. Be specific and, where possible, suggest what the reviewee could clarify or change.
 
-## Milestone 2 Peer-Grading Rubric
+## Milestone 3 Peer-Grading Rubric
 
 **Maximum: 10 points**
 
