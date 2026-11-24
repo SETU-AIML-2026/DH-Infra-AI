@@ -1457,6 +1457,23 @@ AI training pipeline
 #### Notebook : HPC via GCP and Colab
 
  
+## Topic :  Sprint 4: Weeks 10–12
+
+ 
+Model serving, inference APIs, deployment and operational AI systems
+
+### Unit :  Week 10: Model Serving and Inference APIs
+
+ 
+#### Talk : Lecture 10: Model Serving and Inference APIs
+
+ 
+#### Talk : Lecture 10: Further Reading
+
+ 
+#### Notebook : Lab 10: Model Serving and Inference Service
+
+ 
 ## Topic : Assessment milestone guides and grading rubrics.
 
  
@@ -1604,21 +1621,3 @@ When assigning points, consider the following:
 **Could another student, using the submitted work, understand why a particular model and architecture were selected, how the hyperparameters were optimized, how the experiments were tracked, and what conclusions can be drawn from the results? Could they reproduce the main experiments and understand the weaknesses of the selected model?**
 
 If not, deduct points from the relevant criteria for missing specificity, insufficient evidence, or lack of analysis.
-
-## Topic :  Sprint 4: Weeks 10–12
-
- 
-Model serving, inference APIs, deployment and operational AI systems
-
-### Unit :  Week 10: Model Serving and Inference APIs
-
- 
-#### Talk : Lecture 10: Model Serving and Inference APIs
-
- 
-#### Talk : Lecture 10: Further Reading
-
- 
-#### Notebook : Lab 10: Model Serving and Inference Service
-
- 
