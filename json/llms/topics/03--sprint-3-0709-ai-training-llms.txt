@@ -1,0 +1,53 @@
+<SYSTEM> This is the Tutors course  Data Handling and Infrastructure for AI topic  Sprint 3: 07-09 AI Training by SETU Computing and Mathematics</SYSTEM>
+
+
+# Topic :  Sprint 3: 07-09 AI Training
+
+ 
+AI training pipeline
+
+## Unit :  07 AI Training
+
+ 
+### Talk : AI Training Basics
+
+ 
+### Panelvideo : Lecture 07 AI Training Basics
+
+ 
+### Panelvideo : Lab 07 AI Training Basics
+
+ 
+### Notebook : SVM and PyTorch NN training
+
+ 
+## Unit :  08 ML Ops
+
+ 
+### Talk : ML Ops introduction
+
+ 
+### Panelvideo : Lecture 08 MLOps
+
+ 
+### Panelvideo : Lab 08 MLFlow & Tensorboard
+
+ 
+### Notebook : MLOps Tutorial
+
+ 
+## Unit :  08 HPC
+
+ 
+### Talk : HPC introduction
+
+ 
+### Panelvideo : Lecture 09 HPC
+
+ 
+### Panelvideo : Lab 09 HPC on GCP
+
+ 
+### Notebook : HPC via GCP and Colab
+
+ 

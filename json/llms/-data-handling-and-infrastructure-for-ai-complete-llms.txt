@@ -725,70 +725,6 @@ You have now created a GCS bucket and uploaded data to it using the Google Cloud
 #### Notebook : GCS Tutorial
 
  
-### Unit :  04 Project work M1
-
- 
-#### Note :  Grading Rubrics
-
- 
-### Peer-grading instructions
-
-Peer grading is not only about assigning a score. Please **provide constructive feedback explaining your assessment**.
-
-In particular, highlight any **potential problems, ambiguities, or overlooked issues** that you identified in the project. Think about what could cause difficulties later in the project, for example, problems with data leakage, unclear data versions, insufficient reproducibility, inappropriate storage choices, or an underspecified preprocessing or data-splitting strategy.
-
-Your feedback should help to **improve their project**, rather than simply justify the grade. Be specific and, where possible, suggest what they could clarify or change.
-
-
-## Milestone 1 Peer-Grading Rubric
-
-**Maximum: 10 points**
-
-Assess each criterion based on the quality and completeness of the team's description. Give **partial credit** when a criterion is addressed but lacks important detail.
-
-| Criterion                                    |   Points | Full-credit expectations                                                                                                                                                                                                                   |
-| -------------------------------------------- | -------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **1. Raw data storage**                      |  **1.0** | Clearly states **where the raw data will live**, including the storage system/location and why it is appropriate.                                                                                                                          |
-| **2. Processed data storage & file formats** |  **1.0** | Clearly describes **where processed data will be stored** and specifies appropriate **file formats** for raw and/or processed data, with enough detail to understand the intended representation.                                          |
-| **3. Database / object storage decision**    | **0.5** | Explicitly considers whether a **database, object storage, file system, or other solution** is needed. The choice is justified in relation to the project's data and access requirements.                                                  |
-| **4. Data versioning**                       | **0.5** | Explains **how different versions of the data will be identified and tracked**, including changes to datasets where relevant.                                                                                                              |
-| **5. Data access**                           | **1.0** | Clearly explains **how the system/code will access the data**, including relevant paths, APIs, credentials/access mechanisms, or other interfaces as appropriate.                                                                          |
-| **6. Data split / validation strategy**      |  **2.0** | Provides a **clear and appropriate data-splitting strategy**: either cross-validation or a train/dev/test split. The description specifies how the split/validation will be performed and avoids inappropriate data leakage.               |
-| **7. Feature description**                   |  **1.0** | Features used by the AI system are **clearly identified and described**. It is possible to understand what each feature represents and how it is obtained or constructed.                                                                  |
-| **8. Data types and formats**                | **0.5** | Specifies relevant **data types and formats** (e.g., numerical, categorical, text, image; integer, float, string; CSV, JSON, Parquet, etc.) sufficiently to understand how the data will be handled.                                       |
-| **9. Reproducibility of data collection**    |  **1.0** | Describes how the **data collection process can be reproduced**, including data sources, collection procedures, relevant parameters/settings, and/or code where appropriate.                                                               |
-| **10. Reproducibility of preprocessing**     |  **1.5** | Describes preprocessing steps clearly enough that another person could **reproduce the processed dataset from the raw data**. Important transformations, filtering, cleaning, feature construction, and relevant parameters are specified. |
-
-**Total: 10 points**
-
-## Peer-grading guidance
-
-When assigning points, consider the following:
-
-* **Full points:** The criterion is clearly addressed, sufficiently detailed, and appropriate for the project.
-* **Partial points:** The criterion is addressed but is vague, incomplete, insufficiently justified, or missing important implementation details.
-* **0 points:** The criterion is not addressed, or the proposed approach is fundamentally inappropriate.
-
-### Important distinction
-
-**Mentioning something is not the same as specifying it.**
-
-For example:
-
-* *Weak:* “We will store the data in the cloud.”
-* *Stronger:* “Raw data will be stored in a GCS bucckets as JSON files. Processed feature tables will be stored as Parquet files. Each dataset release will have a version identifier and timestamp.”
-
-Similarly:
-
-* *Weak:* “We will split the data into training and testing data.”
-* *Stronger:* “We will use a 70/15/15 train/dev/test split, stratified by the target class. The test set will be held out until final evaluation, and preprocessing parameters will be fitted using only the training data.”
-
-### Overall peer-grading question
-
-**Could another student, using this milestone description, understand how the project's data will be stored, accessed, transformed, split, and reproduced?**
-
-If not, deduct points from the relevant criteria for missing specificity.
-
 ## Topic :  Sprint 2: Weeks 4–6
 
  
@@ -1471,14 +1407,212 @@ The notebook was run from start to end by its authors for Parts 0 to 5 (the samp
 
 Next comes **Lab 6**, in the `lab6_student` folder of the repository: you will extend this pipeline, prove your changes with tests, and run it on **Google Cloud Dataflow**.
 
+## Topic :  Sprint 3: 07-09 AI Training
+
+ 
+AI training pipeline
+
+### Unit :  07 AI Training
+
+ 
+#### Talk : AI Training Basics
+
+ 
+#### Panelvideo : Lecture 07 AI Training Basics
+
+ 
+#### Panelvideo : Lab 07 AI Training Basics
+
+ 
+#### Notebook : SVM and PyTorch NN training
+
+ 
+### Unit :  08 ML Ops
+
+ 
+#### Talk : ML Ops introduction
+
+ 
+#### Panelvideo : Lecture 08 MLOps
+
+ 
+#### Panelvideo : Lab 08 MLFlow & Tensorboard
+
+ 
+#### Notebook : MLOps Tutorial
+
+ 
+### Unit :  08 HPC
+
+ 
+#### Talk : HPC introduction
+
+ 
+#### Panelvideo : Lecture 09 HPC
+
+ 
+#### Panelvideo : Lab 09 HPC on GCP
+
+ 
+#### Notebook : HPC via GCP and Colab
+
+ 
 ## Topic : Assessment milestone guides and grading rubrics.
 
  
+### Unit :  Milestone 1
+
+ 
+Guide and grading rubric
+
+#### Note :  Grading Rubrics
+
+ 
+### Peer-grading instructions
+
+Peer grading is not only about assigning a score. Please **provide constructive feedback explaining your assessment**.
+
+In particular, highlight any **potential problems, ambiguities, or overlooked issues** that you identified in the project. Think about what could cause difficulties later in the project, for example, problems with data leakage, unclear data versions, insufficient reproducibility, inappropriate storage choices, or an underspecified preprocessing or data-splitting strategy.
+
+Your feedback should help to **improve their project**, rather than simply justify the grade. Be specific and, where possible, suggest what they could clarify or change.
+
+
+## Milestone 1 Peer-Grading Rubric
+
+**Maximum: 10 points**
+
+Assess each criterion based on the quality and completeness of the team's description. Give **partial credit** when a criterion is addressed but lacks important detail.
+
+| Criterion                                    |   Points | Full-credit expectations                                                                                                                                                                                                                   |
+| -------------------------------------------- | -------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1. Raw data storage**                      |  **1.0** | Clearly states **where the raw data will live**, including the storage system/location and why it is appropriate.                                                                                                                          |
+| **2. Processed data storage & file formats** |  **1.0** | Clearly describes **where processed data will be stored** and specifies appropriate **file formats** for raw and/or processed data, with enough detail to understand the intended representation.                                          |
+| **3. Database / object storage decision**    | **0.5** | Explicitly considers whether a **database, object storage, file system, or other solution** is needed. The choice is justified in relation to the project's data and access requirements.                                                  |
+| **4. Data versioning**                       | **0.5** | Explains **how different versions of the data will be identified and tracked**, including changes to datasets where relevant.                                                                                                              |
+| **5. Data access**                           | **1.0** | Clearly explains **how the system/code will access the data**, including relevant paths, APIs, credentials/access mechanisms, or other interfaces as appropriate.                                                                          |
+| **6. Data split / validation strategy**      |  **2.0** | Provides a **clear and appropriate data-splitting strategy**: either cross-validation or a train/dev/test split. The description specifies how the split/validation will be performed and avoids inappropriate data leakage.               |
+| **7. Feature description**                   |  **1.0** | Features used by the AI system are **clearly identified and described**. It is possible to understand what each feature represents and how it is obtained or constructed.                                                                  |
+| **8. Data types and formats**                | **0.5** | Specifies relevant **data types and formats** (e.g., numerical, categorical, text, image; integer, float, string; CSV, JSON, Parquet, etc.) sufficiently to understand how the data will be handled.                                       |
+| **9. Reproducibility of data collection**    |  **1.0** | Describes how the **data collection process can be reproduced**, including data sources, collection procedures, relevant parameters/settings, and/or code where appropriate.                                                               |
+| **10. Reproducibility of preprocessing**     |  **1.5** | Describes preprocessing steps clearly enough that another person could **reproduce the processed dataset from the raw data**. Important transformations, filtering, cleaning, feature construction, and relevant parameters are specified. |
+
+**Total: 10 points**
+
+## Peer-grading guidance
+
+When assigning points, consider the following:
+
+* **Full points:** The criterion is clearly addressed, sufficiently detailed, and appropriate for the project.
+* **Partial points:** The criterion is addressed but is vague, incomplete, insufficiently justified, or missing important implementation details.
+* **0 points:** The criterion is not addressed, or the proposed approach is fundamentally inappropriate.
+
+### Important distinction
+
+**Mentioning something is not the same as specifying it.**
+
+For example:
+
+* *Weak:* “We will store the data in the cloud.”
+* *Stronger:* “Raw data will be stored in a GCS bucckets as JSON files. Processed feature tables will be stored as Parquet files. Each dataset release will have a version identifier and timestamp.”
+
+Similarly:
+
+* *Weak:* “We will split the data into training and testing data.”
+* *Stronger:* “We will use a 70/15/15 train/dev/test split, stratified by the target class. The test set will be held out until final evaluation, and preprocessing parameters will be fitted using only the training data.”
+
+### Overall peer-grading question
+
+**Could another student, using this milestone description, understand how the project's data will be stored, accessed, transformed, split, and reproduced?**
+
+If not, deduct points from the relevant criteria for missing specificity.
+
 ### Unit :  Milestone 2
 
  
 Guide and grading rubric
 
 #### Talk :  Milestone 2 Guide and Grading Rubric
+
+ 
+### Unit :  Milestone 3
+
+ 
+Guide and grading rubric
+
+#### Note :  Milestone 3 Peer-Grading Guide
+
+ 
+### Peer-grading instructions
+
+Peer grading is not only about assigning a score. Please **provide constructive feedback explaining your assessment**.
+
+In particular, evaluate whether the student writing the report has made informed decisions about model selection, hyperparameter optimization, and computational resources. Consider whether the experiments are properly tracked and whether the conclusions are supported by observed results.
+
+Highlight potential problems, ambiguities, or overlooked issues, such as insufficient experimentation, poorly justified model choices, inappropriate hyperparameter search strategies, lack of reproducibility, or failure to analyse model weaknesses.
+
+Your feedback should help to improve the project, rather than simply justify the grade. Be specific and, where possible, suggest what the reviewee could clarify or change.
+
+## Milestone 3 Peer-Grading Rubric
+
+**Maximum: 10 points**
+
+| Criterion | Points | Full-credit expectations |
+|---|---:|---|
+| **1. AI model selection** | **1.0** | Selects an appropriate AI/ML model type for the problem and data. The choice is justified based on task characteristics, data properties, expected performance, and computational constraints. Considers relevant alternative model types or architectures where appropriate. |
+| **2. Hyperparameter optimization** | **1.5** | Performs systematic hyperparameter optimization. Identifies the hyperparameters explored, their search ranges or candidate values, and the optimization strategy (e.g., grid search, random search, Bayesian optimization). Uses an appropriate validation strategy and avoids test-set leakage. |
+| **3. MLOps and experiment tracking** | **1.5** | Uses an MLOps solution or experiment-tracking tool (e.g., MLflow, Weights & Biases, or an equivalent solution) to record experiments. Tracks relevant information such as model types, architectures, hyperparameters, metrics, artifacts, and computational resources. Experiments are organized and sufficiently documented to support comparison and analysis. |
+| **4. Analysis and conclusions from experiments** | **1.5** | Draws clear, evidence-based conclusions from observed results. Identifies the best-performing hyperparameters, model type, and/or architecture and explains why they were selected. Discusses relevant trade-offs, including performance, training time, inference cost, and computational resource requirements. Conclusions are supported by experimental evidence. |
+| **5. Compute architecture selection** | **1.0** | Selects and justifies an appropriate computational architecture for training and experimentation (e.g., CPU, single GPU, or distributed/multiple GPUs). The decision considers model complexity, dataset size, computational requirements, training time, scalability, and resource costs where relevant. Ideally, provides evidence that the selected architecture is appropriate for the workload. |
+| **6. Reproducibility** | **1.0** | Provides sufficient information to reproduce the experiments, including code, data references or versions, configurations, random seeds where appropriate, environment/dependency information, and instructions for running the experiments. Another student should be able to reproduce the main experimental results. |
+| **7. Model card / model documentation** | **1.0** | Provides a model card or equivalent documentation describing the selected model, including its intended purpose, architecture, training data, evaluation methodology, performance metrics, limitations, and appropriate use considerations. |
+| **8. Error analysis and model weaknesses** | **1.5** | Analyses mistakes made by the selected model (or multiple candidate models). Identifies representative failure cases, patterns in incorrect predictions, or problematic data subsets. Discusses potential reasons for these errors and identifies model limitations or weaknesses. Ideally, suggests possible improvements. |
+
+**Total: 10 points**
+
+## Peer-grading guidance
+
+When assigning points, consider the following:
+
+- **Full points:** The criterion is clearly addressed, sufficiently detailed, appropriately implemented, and supported by evidence.
+- **Partial points:** The criterion is addressed but is vague, incomplete, insufficiently justified, or missing important implementation details.
+- **0 points:** The criterion is not addressed, or the proposed approach is fundamentally inappropriate.
+
+### Important distinctions
+
+**1. Trying multiple hyperparameters is not the same as performing hyperparameter optimization.**
+
+- *Weak:* "We tried different learning rates and selected the best one."
+- *Stronger:* "We performed a random search over learning rates, batch sizes, and regularization parameters. We evaluated 30 configurations using validation F1-score and recorded the results in MLflow. The best configuration was selected based on validation performance."
+
+**2. Using an experiment-tracking tool is not the same as drawing conclusions from experiments.**
+
+- *Weak:* "We used MLflow to track our experiments."
+- *Stronger:* "We used MLflow to track model configurations, hyperparameters, validation metrics, training duration, and resource consumption. The results indicate that the SVM model achieved the best validation performance, while the neural network required substantially more computational resources without providing a meaningful improvement."
+
+**3. Reporting the best metric is not the same as analysing the results.**
+
+- *Weak:* "Our best model achieved 92% accuracy."
+- *Stronger:* "Our best model achieved 92% accuracy, but its recall for the minority class was only 65%. The error analysis revealed that most false negatives came from a particular subset of examples, suggesting that the model struggles with these cases."
+
+**4. Reproducibility requires more than sharing the source code.**
+
+- *Weak:* "All our code is available in GitHub."
+- *Stronger:* "We provide the experiment configuration, dependency versions, dataset version, random seeds, and instructions to reproduce the best-performing experiment."
+
+### Overall peer-grading question
+
+**Could another student, using the submitted work, understand why a particular model and architecture were selected, how the hyperparameters were optimized, how the experiments were tracked, and what conclusions can be drawn from the results? Could they reproduce the main experiments and understand the weaknesses of the selected model?**
+
+If not, deduct points from the relevant criteria for missing specificity, insufficient evidence, or lack of analysis.
+
+## Topic :  Sprint 4: Weeks 10–12
+
+ 
+Model serving, inference APIs, deployment and operational AI systems
+
+### Unit :  Week 10: Model Serving and Inference APIs
+
+ 
+#### Talk : Lecture 10: Model Serving and Inference APIs
 
  

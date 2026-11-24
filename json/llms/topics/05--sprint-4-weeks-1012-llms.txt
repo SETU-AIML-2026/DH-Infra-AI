@@ -1,0 +1,14 @@
+<SYSTEM> This is the Tutors course  Data Handling and Infrastructure for AI topic  Sprint 4: Weeks 10–12 by SETU Computing and Mathematics</SYSTEM>
+
+
+# Topic :  Sprint 4: Weeks 10–12
+
+ 
+Model serving, inference APIs, deployment and operational AI systems
+
+## Unit :  Week 10: Model Serving and Inference APIs
+
+ 
+### Talk : Lecture 10: Model Serving and Inference APIs
+
+ 
