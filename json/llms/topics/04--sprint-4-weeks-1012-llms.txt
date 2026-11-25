@@ -15,6 +15,9 @@ Model serving, inference APIs, deployment and operational AI systems
 ### Talk : Lecture 10: Further Reading
 
  
+### Panelvideo : Lecture 10: Model Serving and Inference APIs Recording
+
+ 
 ### Notebook : Lab 10: Model Serving and Inference Service
 
  
