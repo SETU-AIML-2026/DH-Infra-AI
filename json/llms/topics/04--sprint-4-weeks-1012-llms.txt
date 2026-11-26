@@ -18,6 +18,9 @@ Model serving, inference APIs, deployment and operational AI systems
 ### Panelvideo : Lecture 10: Model Serving and Inference APIs Recording
 
  
+## Unit :  Lab (2 hours)
+
+ 
 ### Notebook : Lab 10: Model Serving and Inference Service
 
  
