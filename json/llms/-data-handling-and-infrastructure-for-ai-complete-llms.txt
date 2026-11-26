@@ -1477,6 +1477,12 @@ Model serving, inference APIs, deployment and operational AI systems
 ### Unit :  Lab (2 hours)
 
  
+#### Talk : Lab 10: Student Guide 1
+
+ 
+#### Talk : Lab 10: Student Guide 2
+
+ 
 #### Notebook : Lab 10: Model Serving and Inference Service
 
  
