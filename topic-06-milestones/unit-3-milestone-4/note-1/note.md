@@ -148,7 +148,7 @@ Discuss:
 - How the trained model is exposed through an API or equivalent interface.
 - How incoming requests are handled.
 - How the service can accommodate increasing workloads.
-- The selected scaling strategy, such as horizontal scaling, vertical scaling, containerization, load balancing, or autoscaling.
+- The selected scaling strategy, such as horizontal scaling, vertical scaling, containerization, load balancing, or autoscaling. **Note**: we only expect some practical load testing, performance measurements, and justified architectural decisions, deployment with an expensive infrastructure (i.e. Kubernetes) is not expected.
 - Relevant performance measurements, such as latency, throughput, and resource utilization.
 - Limitations and potential scalability improvements.
 
@@ -162,12 +162,12 @@ Discuss:
 - How the retraining process is triggered or executed.
 - How the newly trained model is evaluated.
 - How model versions are tracked and managed.
-- How a new model is made available to the inference service.
+- How a new model is made available to the inference service. **Note**: Full automation is not expected, but considered a good achievement.
 - How a previous model can be restored if the new model performs poorly.
 
 Students should demonstrate **at least one successfully retrained model using extended training data**.
 
-Compare the original and retrained models using appropriate evaluation metrics. Discuss the observed differences and explain whether the additional training data improved, deteriorated, or had no significant impact on model performance.
+**The final test set must remain the same as in the previous milestones to ensure fair comparison of the results**. Compare the original and retrained models using appropriate evaluation metrics. Discuss the observed differences and explain whether the additional training data improved, deteriorated, or had no significant impact on model performance.
 
 **An improvement in performance is not mandatory.** A valid experiment, appropriate evaluation, and well-reasoned conclusions are what matter.
 
